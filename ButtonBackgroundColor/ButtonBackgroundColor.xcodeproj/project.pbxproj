@@ -13,7 +13,7 @@
 		C07312F31C50F2A600AE5DA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07312F11C50F2A600AE5DA9 /* LaunchScreen.storyboard */; };
 		C07313001C50F3D300AE5DA9 /* BBCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C07312FD1C50F3D300AE5DA9 /* BBCAppDelegate.m */; };
 		C07313011C50F3D300AE5DA9 /* BBCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C07312FF1C50F3D300AE5DA9 /* BBCViewController.m */; };
-		C07313041C50F41A00AE5DA9 /* UIButton+BBCBackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C07313031C50F41A00AE5DA9 /* UIButton+BBCBackgroundColor.m */; };
+		C073130A1C5113B300AE5DA9 /* UIButton+BBCBackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C07313091C5113B300AE5DA9 /* UIButton+BBCBackgroundColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		C07312FD1C50F3D300AE5DA9 /* BBCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCAppDelegate.m; sourceTree = "<group>"; };
 		C07312FE1C50F3D300AE5DA9 /* BBCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCViewController.h; sourceTree = "<group>"; };
 		C07312FF1C50F3D300AE5DA9 /* BBCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCViewController.m; sourceTree = "<group>"; };
-		C07313021C50F41A00AE5DA9 /* UIButton+BBCBackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BBCBackgroundColor.h"; sourceTree = "<group>"; };
-		C07313031C50F41A00AE5DA9 /* UIButton+BBCBackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BBCBackgroundColor.m"; sourceTree = "<group>"; };
+		C07313081C5113B300AE5DA9 /* UIButton+BBCBackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+BBCBackgroundColor.h"; path = "../../UIButton+BBCBackgroundColor.h"; sourceTree = "<group>"; };
+		C07313091C5113B300AE5DA9 /* UIButton+BBCBackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+BBCBackgroundColor.m"; path = "../../UIButton+BBCBackgroundColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +83,8 @@
 		C07312FA1C50F3D300AE5DA9 /* ButtonBackgroundColor */ = {
 			isa = PBXGroup;
 			children = (
-				C07313021C50F41A00AE5DA9 /* UIButton+BBCBackgroundColor.h */,
-				C07313031C50F41A00AE5DA9 /* UIButton+BBCBackgroundColor.m */,
+				C07313081C5113B300AE5DA9 /* UIButton+BBCBackgroundColor.h */,
+				C07313091C5113B300AE5DA9 /* UIButton+BBCBackgroundColor.m */,
 			);
 			path = ButtonBackgroundColor;
 			sourceTree = "<group>";
@@ -173,7 +173,7 @@
 				C07313001C50F3D300AE5DA9 /* BBCAppDelegate.m in Sources */,
 				C07312E51C50F2A600AE5DA9 /* main.m in Sources */,
 				C07313011C50F3D300AE5DA9 /* BBCViewController.m in Sources */,
-				C07313041C50F41A00AE5DA9 /* UIButton+BBCBackgroundColor.m in Sources */,
+				C073130A1C5113B300AE5DA9 /* UIButton+BBCBackgroundColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

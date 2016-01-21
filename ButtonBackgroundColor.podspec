@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ButtonBackgroundColor"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Category to handle the background color of a UIButton in normal and selected state."
 
   s.homepage     = "https://github.com/GabrielMassana"
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/GabrielMassana/ButtonBackgroundColor-iOS.git", :tag => s.version, :branch => "master"}
   
-  s.source_files  = "ButtonBackgroundColor/ButtonBackgroundColor/ButtonBackgroundColor/**/*.{h,m}"
+  s.source_files  = "ButtonBackgroundColor-iOS/**/*.{h,m}"
 
   s.requires_arc = true
 
