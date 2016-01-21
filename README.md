@@ -18,24 +18,19 @@ But this comes with a price, for every button in our app we will need an image f
 ## Installation
 
 #### Podfile
-
 ```ruby
 platform :ios, '8.0'
 pod 'ButtonBackgroundColor', '~> 1.0'
 ```
-
 Then, run the following command:
-
 ```bash
 $ pod install
 ```
-
 #### Old school
 
 Drag into your project the folder `/ButtonBackgroundColor-iOS`. That's all.
 
 ## Example
-
 ```objc
 #import "UIButton+BBCBackgroundColor.h"
 
@@ -58,17 +53,16 @@ Drag into your project the folder `/ButtonBackgroundColor-iOS`. That's all.
     return _button;
 }
 ```
-
 ## License
 
 ButtonBackgroundColor-iOS is released under the MIT license. Please see the file called LICENSE.
 
 ## Versions
+```bash
+$ git tag -a 1.0.0 -m 'Version 1.0.0'
 
-git tag -a 1.0.0 -m 'Version 1.0.0'
-
-git push --tags
-
+$ git push --tags
+```
 ## Contact
 
 Gabriel Massana gabrielmassana@gmail.com
