@@ -6,9 +6,9 @@ Category to handle the background color of a UIButton in normal and selected sta
 
 Helps on the size of the app, avoiding to add images to handle states.
 
-As you know iOS only allows you to set the background color of a button for ```objcUIControlStateNormal```. If you want different colors for different states, like ```objcUIControlStateSelected```, you should use ```objcsetBackgroundImage: forState:```.
+As you know iOS only allows you to set the background color of a button for```objc UIControlStateNormal```. If you want different colors for different states, like```objc UIControlStateSelected```, you should use```objc setBackgroundImage: forState:```.
 
-But this comes with a price, for every button in our app we will need an image for every state. With this category you can set the background color of a button for either ```objcUIControlStateNormal``` or ```objcUIControlStateSelected```.
+But this comes with a price, for every button in our app we will need an image for every state. With this category you can set the background color of a button for either```objc UIControlStateNormal``` or```objc UIControlStateSelected```.
 
 ## Installation
 
