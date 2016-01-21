@@ -3,11 +3,16 @@
 ##   What is it?
 
 Category to handle the background color of a UIButton in normal and selected state.
+
 Helps on the size of the app, avoiding to add images to handle states.
+
+As you know iOS only allows you to set the background color of a button for ```objcUIControlStateNormal```. If you want different colors for different states, like ```objcUIControlStateSelected```, you should use ```objcsetBackgroundImage: forState:```.
+
+But this comes with a price, for every button in our app we will need an image for every state. With this category you can set the background color of a button for either ```objcUIControlStateNormal``` or ```objcUIControlStateSelected```.
 
 ## Installation
 
-### Podfile
+#### Podfile
 
 ```ruby
 platform :ios, '8.0'
@@ -20,7 +25,7 @@ Then, run the following command:
 $ pod install
 ```
 
-### Old school
+#### Old school
 
 Drag into your project the folder `/ButtonBackgroundColor-iOS`. That's all.
 
