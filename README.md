@@ -1,9 +1,11 @@
 # ButtonBackgroundColor-iOS
 
+##   What is it?
+
 Category to handle the background color of a UIButton in normal and selected state.
 Helps on the size of the app, avoiding to add images to handle states.
 
-# How to Install it
+## Installation
 
 ### Podfile
 
@@ -22,12 +24,12 @@ $ pod install
 
 Drag into your project the folder `/ButtonBackgroundColor-iOS`. That's all.
 
-
-# Example
+## Example
 
 ```objc
-
 #import "UIButton+BBCBackgroundColor.h"
+
+...
 
 - (UIButton *)button
 {
@@ -44,10 +46,29 @@ Drag into your project the folder `/ButtonBackgroundColor-iOS`. That's all.
     }
     
     return _button;
-}```
+}
+```
 
-# Versions
+## License
+
+Please see the file called LICENSE.
+
+## Versions
 
 git tag -a 1.0.0 -m 'Version 1.0.0'
 
 git push --tags
+
+## Contact
+
+Gabriel Massana gabrielmassana@gmail.com
+
+## Author
+
+Gabriel Massana
+
+##Found an issue?
+
+Please open a [new Issue here](https://github.com/GabrielMassana/ButtonBackgroundColor-iOS/issues/new) if you run into a problem specific to ButtonBackgroundColor-iOS, have a feature request, or want to share a comment.
+
+
