@@ -5,15 +5,46 @@ Helps on the size of the app, avoiding to add images to handle states.
 
 # How to Install it
 
-#### Podfile
+### Podfile
 
 ```ruby
 platform :ios, '8.0'
 pod 'ButtonBackgroundColor', '~> 1.0'
 ```
-#### Old school
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
+### Old school
 
 Drag into your project the folder `/ButtonBackgroundColor-iOS`. That's all.
+
+
+# Example
+
+```objc
+
+#import "UIButton+BBCBackgroundColor.h"
+
+- (UIButton *)button
+{
+    if (!_button)
+    {
+        _button = [UIButton buttonWithType:UIButtonTypeCustom];
+        _button.frame = CGRectMake(0.0f,
+                                   100.0f,
+                                   CGRectGetWidth([UIScreen mainScreen].bounds),
+                                   80.0f);
+        
+        [_button bbc_backgroundColorNormal:[UIColor redColor]
+                   backgroundColorSelected:[UIColor blueColor]];
+    }
+    
+    return _button;
+}```
 
 # Versions
 
