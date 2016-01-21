@@ -39,12 +39,8 @@
                                    CGRectGetWidth([UIScreen mainScreen].bounds),
                                    80.0f);
         
-//        [_button bbc_backgroundColorNormal:[UIColor redColor]
-//                   backgroundColorSelected:[UIColor blueColor]];
-        
-        _button.backgroundColor = [UIColor yellowColor];
-        
-        [_button setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateSelected]
+        [_button bbc_backgroundColorNormal:[UIColor redColor]
+                   backgroundColorSelected:[UIColor blueColor]];
     }
     
     return _button;
