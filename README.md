@@ -1,5 +1,10 @@
 # ButtonBackgroundColor-iOS
 
+[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/ButtonBackgroundColor.svg)](https://img.shields.io/cocoapods/v/ButtonBackgroundColor.svg)
+[![Version](https://img.shields.io/cocoapods/v/ButtonBackgroundColor.svg?style=flat)](http://cocoapods.org/pods/ButtonBackgroundColor)
+[![License](https://img.shields.io/cocoapods/l/ButtonBackgroundColor.svg?style=flat)](http://cocoapods.org/pods/ButtonBackgroundColor)
+[![Platform](https://img.shields.io/cocoapods/p/ButtonBackgroundColor.svg?style=flat)](http://cocoapods.org/pods/ButtonBackgroundColor)
+
 ##   What is it?
 
 Category to handle the background color of a UIButton in normal and selected state.
@@ -56,7 +61,7 @@ Drag into your project the folder `/ButtonBackgroundColor-iOS`. That's all.
 
 ## License
 
-Please see the file called LICENSE.
+ButtonBackgroundColor-iOS is released under the MIT license. Please see the file called LICENSE.
 
 ## Versions
 
