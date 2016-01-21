@@ -3,8 +3,8 @@
 [![Version](https://img.shields.io/cocoapods/v/ButtonBackgroundColor.svg?style=flat)](http://cocoapods.org/pods/ButtonBackgroundColor)
 [![License](https://img.shields.io/cocoapods/l/ButtonBackgroundColor.svg?style=flat)](http://cocoapods.org/pods/ButtonBackgroundColor)
 [![Platform](https://img.shields.io/cocoapods/p/ButtonBackgroundColor.svg?style=flat)](http://cocoapods.org/pods/ButtonBackgroundColor)
-[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/ButtonBackgroundColor.svg)]()
-[![GitHub followers](https://img.shields.io/github/followers/ButtonBackgroundColor.svg?style=social&label=Follow)]()
+[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)]()
+[![GitHub followers](https://img.shields.io/github/followers/espadrine.svg?style=social&label=Follow)]()
 
 ##   What is it?
 
