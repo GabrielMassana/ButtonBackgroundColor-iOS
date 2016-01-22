@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ButtonBackgroundColor"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "Category to handle the background color of a UIButton in normal and selected state."
 
   s.homepage     = "https://github.com/GabrielMassana"
