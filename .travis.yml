@@ -1,0 +1,4 @@
+language: objective-c
+   
+script: 
+   xctool -project ButtonBackgroundColor.xcodeproj -scheme ButtonBackgroundColor build -sdk iphonesimulator
