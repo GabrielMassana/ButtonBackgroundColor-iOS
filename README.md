@@ -4,6 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/ButtonBackgroundColor.svg?style=flat-square)](http://cocoapods.org/pods/ButtonBackgroundColor)
 [![Platform](https://img.shields.io/cocoapods/p/ButtonBackgroundColor.svg?style=flat-square)](http://cocoapods.org/pods/ButtonBackgroundColor)
 [![CocoaPods](https://img.shields.io/cocoapods/metrics/doc-percent/ButtonBackgroundColor.svg?style=flat-square)](http://cocoapods.org/pods/ButtonBackgroundColor)
+[![Build Status](https://img.shields.io/travis/GabrielMassana/ButtonBackgroundColor-iOS/master.svg?style=flat-square)](https://travis-ci.org/GabrielMassana/ButtonBackgroundColor-iOS)
 
 ##   What is it?
 
