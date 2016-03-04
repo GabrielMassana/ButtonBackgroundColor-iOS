@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "ButtonBackgroundColor"
   s.version      = "1.1.0"
-  s.summary      = "Category to handle the background color of a UIButton in normal and selected state."
+  s.summary      = "Category to handle the background color of a UIButton in normal and highlighted state."
 
   s.homepage     = "https://github.com/GabrielMassana"
   s.license      = { :type => 'MIT', :file => 'LICENSE.md'}
