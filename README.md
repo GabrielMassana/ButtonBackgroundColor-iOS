@@ -8,13 +8,13 @@
 
 ##   What is it?
 
-Category to handle the background color of a UIButton in normal and selected state.
+Category to handle the background color of a UIButton in normal and highlighted state.
 
 Helps on the size of the app, avoiding to add images to handle states.
 
-As you know iOS only allows you to set the background color of a button for``` UIControlStateNormal```. If you want different colors for different states, like``` UIControlStateSelected```, you should use``` setBackgroundImage: forState:```.
+As you know iOS only allows you to set the background color of a button for``` UIControlStateNormal```. If you want different colors for different states, like``` UIControlStateHighlighted```, you should use``` setBackgroundImage: forState:```.
 
-But this comes with a price, for every button in our app we will need an image for every state. With this category you can set the background color of a button for either``` UIControlStateNormal``` or``` UIControlStateSelected```.
+But this comes with a price, for every button in our app we will need an image for every state. With this category you can set the background color of a button for either``` UIControlStateNormal``` or``` UIControlStateHighlighted```.
 
 ## Installation
 
@@ -53,7 +53,7 @@ Drag into your project the folder `/ButtonBackgroundColor-iOS`. That's all.
                                    80.0f);
         
         [_button bbc_backgroundColorNormal:[UIColor redColor]
-                   backgroundColorSelected:[UIColor blueColor]];
+                backgroundColorHighlighted:[UIColor blueColor]];
     }
     
     return _button;
