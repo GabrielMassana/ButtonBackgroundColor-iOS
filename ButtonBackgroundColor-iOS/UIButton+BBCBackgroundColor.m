@@ -16,9 +16,9 @@
 static void const *BBCBackgroundColorNormal = &BBCBackgroundColorNormal;
 
 /**
- Key for a selected backgroundColor.
+ Key for a highlighted backgroundColor.
  */
-static void const *BBCBackgroundColorSelected = &BBCBackgroundColorSelected;
+static void const *BBCBackgroundColorHighlighted = &BBCBackgroundColorHighlighted;
 
 @implementation UIButton (BBCBackgroundColor)
 
@@ -26,6 +26,13 @@ static void const *BBCBackgroundColorSelected = &BBCBackgroundColorSelected;
 
 - (void)bbc_backgroundColorNormal:(UIColor *)normal
           backgroundColorSelected:(UIColor *)selected
+{
+    [self bbc_backgroundColorNormal:normal
+         backgroundColorHighlighted:selected];
+}
+
+- (void)bbc_backgroundColorNormal:(UIColor *)normal
+       backgroundColorHighlighted:(UIColor *)highlighted
 {
     //set normal background color
     self.backgroundColor = normal;
@@ -49,7 +56,7 @@ static void const *BBCBackgroundColorSelected = &BBCBackgroundColorSelected;
     
     //store colors
     [self setNormalBackgroundColor:normal];
-    [self setSelectedBackgroundColor:selected];
+    [self setHighlightedBackgroundColor:highlighted];
 }
 
 #pragma mark - Setters
@@ -62,11 +69,11 @@ static void const *BBCBackgroundColorSelected = &BBCBackgroundColorSelected;
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (void)setSelectedBackgroundColor:(UIColor *)selected
+- (void)setHighlightedBackgroundColor:(UIColor *)highlighted
 {
     objc_setAssociatedObject(self,
-                             BBCBackgroundColorSelected,
-                             selected,
+                             BBCBackgroundColorHighlighted,
+                             highlighted,
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
@@ -78,10 +85,10 @@ static void const *BBCBackgroundColorSelected = &BBCBackgroundColorSelected;
                                     BBCBackgroundColorNormal);
 }
 
-- (UIColor *)selectedBackgroundColor
+- (UIColor *)highlightedBackgroundColor
 {
     return objc_getAssociatedObject(self,
-                                    BBCBackgroundColorSelected);
+                                    BBCBackgroundColorHighlighted);
 }
 
 #pragma mark - ButtonActions
@@ -98,12 +105,28 @@ static void const *BBCBackgroundColorSelected = &BBCBackgroundColorSelected;
 
 - (void)buttonTouchDown:(UIButton *)sender
 {
-    sender.backgroundColor = self.selectedBackgroundColor;
+    sender.backgroundColor = self.highlightedBackgroundColor;
 }
 
 - (void)buttonTouchCancel:(UIButton *)sender
 {
     sender.backgroundColor = self.normalBackgroundColor;
+}
+
+#pragma mark - ControlState
+
+- (void)setHighlighted:(BOOL)highlighted
+{
+    super.highlighted = highlighted;
+    
+    if (highlighted)
+    {
+        self.backgroundColor = self.highlightedBackgroundColor;
+    }
+    else
+    {
+        self.backgroundColor = self.normalBackgroundColor;
+    }
 }
 
 @end

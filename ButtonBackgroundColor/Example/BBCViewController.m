@@ -40,7 +40,7 @@
                                    80.0f);
         
         [_button bbc_backgroundColorNormal:[UIColor redColor]
-                   backgroundColorSelected:[UIColor blueColor]];
+                backgroundColorHighlighted:[UIColor blueColor]];
     }
     
     return _button;

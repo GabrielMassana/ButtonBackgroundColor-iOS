@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 /**
- Category to handle the background color of a UIButton in normal and selected state.
+ Category to handle the background color of a UIButton in normal and highlighted state.
  */
 @interface UIButton (BBCBackgroundColor)
 
@@ -18,9 +18,22 @@
  
  @param normal - the color for a normal state.
  @param selected - the color for a selected state.
+ 
+ @deprecated Deprecated since 1.0.8
+ 
+ @note Please use instead:  @code bbc_backgroundColorNormal:backgroundColorHighlighted: @endcode
  */
 - (void)bbc_backgroundColorNormal:(UIColor *)normal
-          backgroundColorSelected:(UIColor *)selected;
+          backgroundColorSelected:(UIColor *)selected __attribute__((deprecated));
+
+/**
+ Sets the background colors to use in normal and highlighted button state.
+ 
+ @param normal - the color for a normal state.
+ @param highlighted - the color for a highlighted state.
+ */
+- (void)bbc_backgroundColorNormal:(UIColor *)normal
+       backgroundColorHighlighted:(UIColor *)highlighted;
 
 /**
  The color for a normal state.
@@ -28,8 +41,8 @@
 @property (nonatomic, strong) UIColor *normalBackgroundColor;
 
 /**
- The color for a selected state.
+ The color for a highlighted state.
  */
-@property (nonatomic, strong) UIColor *selectedBackgroundColor;
+@property (nonatomic, strong) UIColor *highlightedBackgroundColor;
 
 @end

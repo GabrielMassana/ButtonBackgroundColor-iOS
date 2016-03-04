@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C02AFA261C89F4CD00BFCA60"
+               BuildableName = "ButtonBackgroundColorTests.xctest"
+               BlueprintName = "ButtonBackgroundColorTests"
+               ReferencedContainer = "container:ButtonBackgroundColor.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
