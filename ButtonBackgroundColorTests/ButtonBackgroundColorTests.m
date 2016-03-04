@@ -103,5 +103,4 @@
     XCTAssertEqualObjects(self.button.backgroundColor, self.highlightedColor,  @"fail_test_bbc_controlStateHighlighted");
 }
 
-
 @end
