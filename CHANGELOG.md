@@ -1,4 +1,4 @@
-1.1.0
+1.1.1
 
 - Deprecated method bbc_backgroundColorNormal:backgroundColorSelected:
 - Added method bbc_backgroundColorNormal:backgroundColorHighlighted:
