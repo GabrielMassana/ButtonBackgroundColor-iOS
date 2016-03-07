@@ -12,3 +12,5 @@
 1.1.3
 
 - Bug solved on setHighlighted
+- Unit tests for buttons not using the category
+
