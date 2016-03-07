@@ -4,3 +4,7 @@
 - Added method bbc_backgroundColorNormal:backgroundColorHighlighted:
 - Added functionality to set button.highlighted = YES
 - Added Unit Tests
+ 
+1.1.2
+
+- Unit tests for deprecated method
