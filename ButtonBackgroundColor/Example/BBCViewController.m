@@ -14,6 +14,8 @@
 
 @property (nonatomic, strong) UIButton *button;
 
+@property (nonatomic, strong) UIButton *buttonWithout;
+
 @end
 
 @implementation BBCViewController
@@ -25,6 +27,7 @@
     [super viewDidLoad];
     
     [self.view addSubview:self.button];
+    [self.view addSubview:self.buttonWithout];
 }
 
 #pragma mark - Subviews
@@ -44,6 +47,22 @@
     }
     
     return _button;
+}
+
+- (UIButton *)buttonWithout
+{
+    if (!_buttonWithout)
+    {
+        _buttonWithout = [UIButton buttonWithType:UIButtonTypeCustom];
+        _buttonWithout.frame = CGRectMake(0.0f,
+                                   200.0f,
+                                   CGRectGetWidth([UIScreen mainScreen].bounds),
+                                   80.0f);
+        
+        _buttonWithout.backgroundColor = [UIColor blueColor];
+    }
+    
+    return _buttonWithout;
 }
 
 @end

@@ -14,6 +14,8 @@
 
 @property (nonatomic, strong) UIButton *button;
 @property (nonatomic, strong) UIButton *deprecatedButton;
+@property (nonatomic, strong) UIButton *buttonWithoutCategory;
+
 @property (nonatomic, strong) UIColor *normalColor;
 @property (nonatomic, strong) UIColor *highlightedColor;
 
@@ -37,6 +39,10 @@
     
     [self.deprecatedButton bbc_backgroundColorNormal:self.normalColor
                 backgroundColorHighlighted:self.highlightedColor];
+    
+    self.buttonWithoutCategory = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    self.buttonWithoutCategory.backgroundColor = self.normalColor;
 }
 
 - (void)tearDown
@@ -83,6 +89,24 @@
     XCTAssertEqualObjects(self.deprecatedButton.highlightedBackgroundColor, self.highlightedColor,  @"fail_test_bbc_highlightedColor_stored_deprecated");
 }
 
+
+#pragma mark - ColorWithoutCategory
+
+- (void)test_bbc_backgroundColor_setted_withoutCategory
+{
+    XCTAssertEqualObjects(self.buttonWithoutCategory.backgroundColor, self.normalColor,  @"fail_test_bbc_backgroundColor_setted_withoutCategory");
+}
+
+- (void)test_bbc_normalColor_stored_withoutCategory
+{
+    XCTAssertEqualObjects(self.buttonWithoutCategory.normalBackgroundColor, nil,  @"fail_test_bbc_normalColor_stored_withoutCategory");
+}
+
+- (void)test_bbc_highlightedColor_stored_withoutCategory
+{
+    XCTAssertEqualObjects(self.buttonWithoutCategory.highlightedBackgroundColor, nil,  @"fail_test_bbc_highlightedColor_stored_withoutCategory");
+}
+
 #pragma mark - ControlEvent
 
 - (void)test_bbc_controlEventTouchDown
@@ -124,23 +148,53 @@
 
 - (void)test_bbc_controlEventTouchUpInside_deprecated
 {
-    [self.button sendActionsForControlEvents:UIControlEventTouchUpInside];
+    [self.deprecatedButton sendActionsForControlEvents:UIControlEventTouchUpInside];
     
     XCTAssertEqualObjects(self.deprecatedButton.backgroundColor, self.normalColor,  @"fail_test_bbc_controlEventTouchUpInside_deprecated");
 }
 
 - (void)test_bbc_controlEventTouchUpOutside_deprecated
 {
-    [self.button sendActionsForControlEvents:UIControlEventTouchUpOutside];
+    [self.deprecatedButton sendActionsForControlEvents:UIControlEventTouchUpOutside];
     
     XCTAssertEqualObjects(self.deprecatedButton.backgroundColor, self.normalColor,  @"fail_test_bbc_controlEventTouchUpOutside_deprecated");
 }
 
 - (void)test_bbc_controlEventTouchCancel_deprecated
 {
-    [self.button sendActionsForControlEvents:UIControlEventTouchCancel];
+    [self.deprecatedButton sendActionsForControlEvents:UIControlEventTouchCancel];
     
     XCTAssertEqualObjects(self.deprecatedButton.backgroundColor, self.normalColor,  @"fail_test_bbc_controlEventTouchCancel_deprecated");
+}
+
+#pragma mark - ControlEventWithoutCategory
+
+- (void)test_bbc_controlEventTouchDown_withoutCategory
+{
+    [self.buttonWithoutCategory sendActionsForControlEvents:UIControlEventTouchDown];
+    
+    XCTAssertEqualObjects(self.buttonWithoutCategory.backgroundColor, self.normalColor,  @"fail_test_bbc_controlEventTouchDown_withoutCategory");
+}
+
+- (void)test_bbc_controlEventTouchUpInside_withoutCategory
+{
+    [self.buttonWithoutCategory sendActionsForControlEvents:UIControlEventTouchUpInside];
+    
+    XCTAssertEqualObjects(self.buttonWithoutCategory.backgroundColor, self.normalColor,  @"fail_test_bbc_controlEventTouchUpInside_withoutCategory");
+}
+
+- (void)test_bbc_controlEventTouchUpOutside_withoutCategory
+{
+    [self.buttonWithoutCategory sendActionsForControlEvents:UIControlEventTouchUpOutside];
+    
+    XCTAssertEqualObjects(self.buttonWithoutCategory.backgroundColor, self.normalColor,  @"fail_test_bbc_controlEventTouchUpOutside_withoutCategory");
+}
+
+- (void)test_bbc_controlEventTouchCancel_withoutCategory
+{
+    [self.buttonWithoutCategory sendActionsForControlEvents:UIControlEventTouchCancel];
+    
+    XCTAssertEqualObjects(self.buttonWithoutCategory.backgroundColor, self.normalColor,  @"fail_test_bbc_controlEventTouchCancel_withoutCategory");
 }
 
 #pragma mark - ControlState
@@ -155,6 +209,20 @@
     self.button.highlighted = YES;
     
     XCTAssertEqualObjects(self.button.backgroundColor, self.highlightedColor,  @"fail_test_bbc_controlStateHighlighted");
+}
+
+#pragma mark - ControlStateWithoutCategory
+
+- (void)test_bbc_controlStateNormal_withoutCategory
+{
+    XCTAssertEqualObjects(self.buttonWithoutCategory.backgroundColor, self.normalColor,  @"fail_test_bbc_controlStateNormal_withoutCategory");
+}
+
+- (void)test_bbc_controlStateHighlighted_withoutCategory
+{
+    self.buttonWithoutCategory.highlighted = YES;
+    
+    XCTAssertEqualObjects(self.buttonWithoutCategory.backgroundColor, self.normalColor,  @"fail_test_bbc_controlStateHighlighted_withoutCategory");
 }
 
 @end
