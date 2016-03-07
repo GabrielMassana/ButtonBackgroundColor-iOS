@@ -119,7 +119,8 @@ static void const *BBCBackgroundColorHighlighted = &BBCBackgroundColorHighlighte
 {
     super.highlighted = highlighted;
     
-    if (highlighted)
+    if (highlighted &&
+        self.highlightedBackgroundColor)
     {
         self.backgroundColor = self.highlightedBackgroundColor;
     }
