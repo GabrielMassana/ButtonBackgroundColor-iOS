@@ -8,3 +8,7 @@
 1.1.2
 
 - Unit tests for deprecated method
+ 
+1.1.3
+
+- Bug solved on setHighlighted
