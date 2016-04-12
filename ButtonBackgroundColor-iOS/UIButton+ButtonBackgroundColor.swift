@@ -46,12 +46,12 @@ public extension UIButton
     //MARK: Getters
     
     /// The color for a normal state.
-    private func normalBackgroundColor() -> UIColor?
+    public func normalBackgroundColor() -> UIColor?
     {
         return objc_getAssociatedObject(self, &BackgroundColorNormal) as? UIColor
     }
     /// The color for a highlighted state.
-    private func highlightedBackgroundColor() -> UIColor?
+    public func highlightedBackgroundColor() -> UIColor?
     {
         return objc_getAssociatedObject(self, &BackgroundColorHighlighted) as? UIColor
     }
