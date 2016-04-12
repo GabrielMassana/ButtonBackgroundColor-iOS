@@ -22,7 +22,7 @@ But this comes with a price, for every button in our app we will need an image f
 
 ```ruby
 platform :ios, '8.0'
-pod 'ButtonBackgroundColor', '~> 1.0'
+pod 'ButtonBackgroundColor'
 ```
 
 Then, run the following command:
@@ -77,7 +77,7 @@ ButtonBackgroundColor-iOS is released under the MIT license. Please see the file
 ## Versions
 
 ```bash
-$ git tag -a 1.0.0 -m 'Version 1.0.0'
+$ git tag -a 2.0.0 -m 'Version 2.0.0'
 
 $ git push --tags
 ```
