@@ -13,7 +13,18 @@
 		C0D133041CBD372C00CF0C2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D133021CBD372C00CF0C2B /* AppDelegate.swift */; };
 		C0D133051CBD372C00CF0C2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D133031CBD372C00CF0C2B /* ViewController.swift */; };
 		C0D133081CBD376D00CF0C2B /* UIButton+ButtonBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D133071CBD376D00CF0C2B /* UIButton+ButtonBackgroundColor.swift */; };
+		C0D133101CBD555700CF0C2B /* ButtonBackgroundColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D1330F1CBD555700CF0C2B /* ButtonBackgroundColorTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0D133121CBD555700CF0C2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0D132E41CBD36B200CF0C2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0D132EB1CBD36B200CF0C2B;
+			remoteInfo = ButtonBackgroundColor;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C0D132EC1CBD36B200CF0C2B /* ButtonBackgroundColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonBackgroundColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		C0D133021CBD372C00CF0C2B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0D133031CBD372C00CF0C2B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0D133071CBD376D00CF0C2B /* UIButton+ButtonBackgroundColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ButtonBackgroundColor.swift"; sourceTree = "<group>"; };
+		C0D1330D1CBD555700CF0C2B /* ButtonBackgroundColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonBackgroundColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0D1330F1CBD555700CF0C2B /* ButtonBackgroundColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBackgroundColorTests.swift; sourceTree = "<group>"; };
+		C0D133111CBD555700CF0C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C0D132E91CBD36B200CF0C2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0D1330A1CBD555700CF0C2B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				C0D132EE1CBD36B200CF0C2B /* ButtonBackgroundColor */,
+				C0D1330E1CBD555700CF0C2B /* ButtonBackgroundColorTests */,
 				C0D132ED1CBD36B200CF0C2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				C0D132EC1CBD36B200CF0C2B /* ButtonBackgroundColor.app */,
+				C0D1330D1CBD555700CF0C2B /* ButtonBackgroundColorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +106,15 @@
 			path = "ButtonBackgroundColor-iOS";
 			sourceTree = SOURCE_ROOT;
 		};
+		C0D1330E1CBD555700CF0C2B /* ButtonBackgroundColorTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0D1330F1CBD555700CF0C2B /* ButtonBackgroundColorTests.swift */,
+				C0D133111CBD555700CF0C2B /* Info.plist */,
+			);
+			path = ButtonBackgroundColorTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +135,24 @@
 			productReference = C0D132EC1CBD36B200CF0C2B /* ButtonBackgroundColor.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C0D1330C1CBD555700CF0C2B /* ButtonBackgroundColorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0D133141CBD555700CF0C2B /* Build configuration list for PBXNativeTarget "ButtonBackgroundColorTests" */;
+			buildPhases = (
+				C0D133091CBD555700CF0C2B /* Sources */,
+				C0D1330A1CBD555700CF0C2B /* Frameworks */,
+				C0D1330B1CBD555700CF0C2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0D133131CBD555700CF0C2B /* PBXTargetDependency */,
+			);
+			name = ButtonBackgroundColorTests;
+			productName = ButtonBackgroundColorTests;
+			productReference = C0D1330D1CBD555700CF0C2B /* ButtonBackgroundColorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -115,6 +165,10 @@
 				TargetAttributes = {
 					C0D132EB1CBD36B200CF0C2B = {
 						CreatedOnToolsVersion = 7.2;
+					};
+					C0D1330C1CBD555700CF0C2B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C0D132EB1CBD36B200CF0C2B;
 					};
 				};
 			};
@@ -132,6 +186,7 @@
 			projectRoot = "";
 			targets = (
 				C0D132EB1CBD36B200CF0C2B /* ButtonBackgroundColor */,
+				C0D1330C1CBD555700CF0C2B /* ButtonBackgroundColorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -144,6 +199,13 @@
 				C0D132FA1CBD36B200CF0C2B /* LaunchScreen.storyboard in Resources */,
 				C0D132F71CBD36B200CF0C2B /* Assets.xcassets in Resources */,
 				C0D132F51CBD36B200CF0C2B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0D1330B1CBD555700CF0C2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +222,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0D133091CBD555700CF0C2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0D133101CBD555700CF0C2B /* ButtonBackgroundColorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0D133131CBD555700CF0C2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0D132EB1CBD36B200CF0C2B /* ButtonBackgroundColor */;
+			targetProxy = C0D133121CBD555700CF0C2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C0D132F31CBD36B200CF0C2B /* Main.storyboard */ = {
@@ -285,6 +363,30 @@
 			};
 			name = Release;
 		};
+		C0D133151CBD555700CF0C2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ButtonBackgroundColorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Massana.ButtonBackgroundColorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButtonBackgroundColor.app/ButtonBackgroundColor";
+			};
+			name = Debug;
+		};
+		C0D133161CBD555700CF0C2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ButtonBackgroundColorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Massana.ButtonBackgroundColorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ButtonBackgroundColor.app/ButtonBackgroundColor";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -305,6 +407,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C0D133141CBD555700CF0C2B /* Build configuration list for PBXNativeTarget "ButtonBackgroundColorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0D133151CBD555700CF0C2B /* Debug */,
+				C0D133161CBD555700CF0C2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
