@@ -46,7 +46,7 @@ Drag into your project the folder `/ButtonBackgroundColor-iOS`. That's all.
 ## Example Objective-C
 
 ```objc
-#import "UIButton+BBCBackgroundColor.h"
+#import "ButtonBackgroundColor-Swift.h"
 
 ...
 
