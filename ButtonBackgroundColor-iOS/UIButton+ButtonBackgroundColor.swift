@@ -9,12 +9,13 @@
 import UIKit
 import ObjectiveC
 
+/// Key for a normal backgroundColor.
 var BackgroundColorNormal = "BackgroundColorNormal"
+
+/// Key for a highlighted backgroundColor.
 var BackgroundColorHighlighted = "BackgroundColorHighlighted"
 
-/**
- Extension to handle the background color of a UIButton in normal and highlighted state.
- */
+/// Extension to handle the background color of a UIButton in normal and highlighted state.
 public extension UIButton
 {
     //MARK: ButtonBackgroundColor
@@ -25,6 +26,7 @@ public extension UIButton
      - parameter normal: the color for a normal state.
      - parameter highlighted: the color for a highlighted state.
      */
+    @objc(bbc_backgroundColorNormal:backgroundColorHighlighted:)
     public func backgroundColorForStates(normal normal: UIColor, highlighted: UIColor)
     {
         //set normal background color
@@ -56,22 +58,22 @@ public extension UIButton
 
     //MARK: ButtonActions
     
-    private func buttonTouchUpInside(sender: UIButton)
+    func buttonTouchUpInside(sender: UIButton)
     {
         sender.backgroundColor = normalBackgroundColor()
     }
     
-    private func buttonTouchUpOutside(sender: UIButton)
+    func buttonTouchUpOutside(sender: UIButton)
     {
         sender.backgroundColor = normalBackgroundColor()
     }
     
-    private func buttonTouchDown(sender: UIButton)
+    func buttonTouchDown(sender: UIButton)
     {
         sender.backgroundColor = highlightedBackgroundColor()
     }
     
-    private func buttonTouchCancel(sender: UIButton)
+    func buttonTouchCancel(sender: UIButton)
     {
         sender.backgroundColor = normalBackgroundColor()
     }
@@ -87,7 +89,7 @@ public extension UIButton
             {
                 backgroundColor = self.highlightedBackgroundColor()
             }
-            else
+            else if (self.normalBackgroundColor() != nil)
             {
                 backgroundColor = self.normalBackgroundColor()
             }
