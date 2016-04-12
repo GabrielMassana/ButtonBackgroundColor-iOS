@@ -35,7 +35,15 @@ $ pod install
 
 Drag into your project the folder `/ButtonBackgroundColor-iOS`. That's all.
 
-## Example
+## Example Swift
+
+```swift
+
+ let button: UIButton = UIButton(type: .Custom)
+ button.backgroundColorForStates(normal: UIColor.redColor(), highlighted: UIColor.blueColor())
+```
+
+## Example Objective-C
 
 ```objc
 #import "UIButton+BBCBackgroundColor.h"
@@ -59,6 +67,8 @@ Drag into your project the folder `/ButtonBackgroundColor-iOS`. That's all.
     return _button;
 }
 ```
+
+
 
 ## License
 
