@@ -46,11 +46,16 @@ public extension UIButton
     //MARK: Getters
     
     /// The color for a normal state.
+    ///
+    /// returns: The normal background color
     public func normalBackgroundColor() -> UIColor?
     {
         return objc_getAssociatedObject(self, &BackgroundColorNormal) as? UIColor
     }
+    
     /// The color for a highlighted state.
+    ///
+    /// returns: The highlighted background color.
     public func highlightedBackgroundColor() -> UIColor?
     {
         return objc_getAssociatedObject(self, &BackgroundColorHighlighted) as? UIColor
@@ -58,21 +63,41 @@ public extension UIButton
 
     //MARK: ButtonActions
     
+    /**
+     The button updates the background color after a Control Event TouchUpInside.
+     
+     - parameter sender: the button.
+     */
     func buttonTouchUpInside(sender: UIButton)
     {
         sender.backgroundColor = normalBackgroundColor()
     }
     
+    /**
+     The button updates the background color after a Control Event TouchUpOutside.
+     
+     - parameter sender: the button.
+     */
     func buttonTouchUpOutside(sender: UIButton)
     {
         sender.backgroundColor = normalBackgroundColor()
     }
     
+    /**
+     The button updates the background color after a Control Event TouchDown.
+     
+     - parameter sender: the button.
+     */
     func buttonTouchDown(sender: UIButton)
     {
         sender.backgroundColor = highlightedBackgroundColor()
     }
     
+    /**
+     The button updates the background color after a Control Event TouchCancel.
+     
+     - parameter sender: the button.
+     */
     func buttonTouchCancel(sender: UIButton)
     {
         sender.backgroundColor = normalBackgroundColor()
@@ -80,6 +105,11 @@ public extension UIButton
 
     //MARK: ControlState
     
+    /**
+     A Boolean value indicating whether the control draws a highlight.
+     
+     Method updated the background color depending on if the button is highlighted or not.
+     */
     override var highlighted: Bool
     {
         didSet
