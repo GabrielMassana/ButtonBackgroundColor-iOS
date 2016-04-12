@@ -33,10 +33,10 @@ public extension UIButton
         backgroundColor = normal
 
         //handle states
-        addTarget(self, action: "buttonTouchUpInside:", forControlEvents:.TouchUpInside)
-        addTarget(self, action: "buttonTouchUpOutside:", forControlEvents:.TouchUpOutside)
-        addTarget(self, action: "buttonTouchDown:", forControlEvents:.TouchDown)
-        addTarget(self, action: "buttonTouchCancel:", forControlEvents:.TouchCancel)
+        addTarget(self, action: #selector(UIButton.buttonTouchUpInside(_:)), forControlEvents:.TouchUpInside)
+        addTarget(self, action: #selector(UIButton.buttonTouchUpOutside(_:)), forControlEvents:.TouchUpOutside)
+        addTarget(self, action: #selector(UIButton.buttonTouchDown(_:)), forControlEvents:.TouchDown)
+        addTarget(self, action: #selector(UIButton.buttonTouchCancel(_:)), forControlEvents:.TouchCancel)
         
         //store colors
         objc_setAssociatedObject(self, &BackgroundColorNormal, normal, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
