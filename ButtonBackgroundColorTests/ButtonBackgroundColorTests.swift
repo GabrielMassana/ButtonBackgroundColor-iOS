@@ -142,32 +142,4 @@ class ButtonBackgroundColorTests: XCTestCase {
         
         XCTAssertEqual(button!.backgroundColor, normalColor,  "test_bbc_controlEventTouchCancel_withoutExtension");
     }
-    
-    //MARK: - ControlState
-
-    func test_bbc_controlStateNormal()
-    {
-        XCTAssertEqual(button!.backgroundColor, normalColor,  "fail_test_bbc_controlStateNormal");
-    }
-    
-    func test_bbc_controlStateHighlighted()
-    {
-        button!.highlighted = true;
-        
-        XCTAssertEqual(button!.backgroundColor, highlightedColor,  "fail_test_bbc_controlStateHighlighted");
-    }
-    
-    //MARK: - ControlStateWithoutExtension
-    
-    func test_bbc_controlStateNormal_withoutExtension()
-    {
-        XCTAssertEqual(buttonWithoutExtension!.backgroundColor, normalColor,  "test_bbc_controlStateNormal_withoutExtension");
-    }
-    
-    func test_bbc_controlStateHighlighted_withoutExtension()
-    {
-        buttonWithoutExtension!.highlighted = true;
-        
-        XCTAssertEqual(buttonWithoutExtension!.backgroundColor, normalColor,  "test_bbc_controlStateHighlighted_withoutExtension");
-    }
 }

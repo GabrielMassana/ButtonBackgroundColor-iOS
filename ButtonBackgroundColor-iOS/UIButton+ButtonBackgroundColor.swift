@@ -106,34 +106,4 @@ public extension UIButton
     {
         sender.backgroundColor = normalBackgroundColor()
     }
-
-    //MARK: ControlState
-    
-    /**
-     A Boolean value indicating whether the control draws a highlight.
-     
-     Method updated the background color depending on if the button is highlighted or not.
-     */
-    override var highlighted: Bool
-    {
-        willSet
-        {
-            // Overriding highlighted makes the button to stop updating the highlighted status. Weird but true.
-            // This line use selected to show changes in the button when highlighted.
-            selected = !highlighted
-        }
-        
-        didSet
-        {
-            if (highlighted == true &&
-            highlightedBackgroundColor() != nil)
-            {
-                backgroundColor = self.highlightedBackgroundColor()
-            }
-            else if (self.normalBackgroundColor() != nil)
-            {
-                backgroundColor = self.normalBackgroundColor()
-            }
-        }
-    }
 }
