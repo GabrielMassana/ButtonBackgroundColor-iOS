@@ -1,8 +1,8 @@
-### 2.0.4
+### 2.0.5
 
  - Swift 2.2
- - Solved bug with highlighted
- 
+ - Removed ControlState / setHighlighted
+
 ### 2.0.3
 
 - Pod translated to Swift
