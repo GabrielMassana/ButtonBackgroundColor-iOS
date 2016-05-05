@@ -68,7 +68,24 @@ Drag into your project the folder `/ButtonBackgroundColor-iOS`. That's all.
 }
 ```
 
+## Do not working with
 
+```swift
+
+ let button: UIButton = UIButton(type: .Custom)
+ button.backgroundColorForStates(normal: UIColor.redColor(), highlighted: UIColor.blueColor())
+ 
+ button.highlighted = true
+ 
+```
+
+```objc
+
+[button bbc_backgroundColorNormal:[UIColor redColor]
+       backgroundColorHighlighted:[UIColor blueColor]];
+
+button.highlighted = YES
+```
 
 ## License
 
