@@ -1,3 +1,8 @@
+### 2.0.4
+
+ - Swift 2.2
+ - Solved bug with highlighted
+ 
 ### 2.0.3
 
 - Pod translated to Swift
