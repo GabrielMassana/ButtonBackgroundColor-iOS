@@ -14,17 +14,17 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
 
-        let button: UIButton = UIButton(type: .Custom)
+        let button: UIButton = UIButton(type: .custom)
         
-        button.frame = CGRectMake(0.0, 100.0, CGRectGetWidth(UIScreen.mainScreen().bounds), 80.0)
-        button.backgroundColorForStates(normal: UIColor.redColor(), highlighted: UIColor.blueColor())
+        button.frame = CGRect(x: 0.0, y: 100.0, width: UIScreen.main.bounds.width, height: 80.0)
+        button.backgroundColorForStates(normal: UIColor.red, highlighted: UIColor.blue)
         
         view.addSubview(button)
         
-        let buttonWithout: UIButton = UIButton(type: .Custom)
+        let buttonWithout: UIButton = UIButton(type: .custom)
         
-        buttonWithout.frame = CGRectMake(0.0, 200.0, CGRectGetWidth(UIScreen.mainScreen().bounds), 80.0)
-        buttonWithout.backgroundColor = UIColor.greenColor()
+        buttonWithout.frame = CGRect(x: 0.0, y: 200.0, width: UIScreen.main.bounds.width, height: 80.0)
+        buttonWithout.backgroundColor = UIColor.green
         
         view.addSubview(buttonWithout)
     }

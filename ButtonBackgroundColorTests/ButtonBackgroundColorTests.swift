@@ -26,14 +26,14 @@ class ButtonBackgroundColorTests: XCTestCase {
     {
         super.setUp()
         
-        normalColor = UIColor.redColor()
-        highlightedColor = UIColor.orangeColor()
+        normalColor = UIColor.red
+        highlightedColor = UIColor.orange
     
-        button = UIButton(type: .Custom)
+        button = UIButton(type: .custom)
         
         button!.backgroundColorForStates(normal: normalColor!, highlighted: highlightedColor!)
         
-        buttonWithoutExtension = UIButton(type: .Custom)
+        buttonWithoutExtension = UIButton(type: .custom)
         
         buttonWithoutExtension!.backgroundColor = normalColor
     }
@@ -87,28 +87,28 @@ class ButtonBackgroundColorTests: XCTestCase {
     
     func test_bbc_controlEventTouchDown()
     {
-        button!.sendActionsForControlEvents(.TouchDown)
+        button!.sendActions(for: .touchDown)
         
         XCTAssertEqual(button!.backgroundColor, highlightedColor,  "fail_test_bbc_controlEventTouchDown");
     }
     
     func test_bbc_controlEventTouchUpInside()
     {
-        button!.sendActionsForControlEvents(.TouchUpInside)
+        button!.sendActions(for: .touchUpInside)
         
         XCTAssertEqual(button!.backgroundColor, normalColor,  "test_bbc_controlEventTouchUpInside");
     }
     
     func test_bbc_controlEventTouchUpOutside()
     {
-        button!.sendActionsForControlEvents(.TouchUpOutside)
+        button!.sendActions(for: .touchUpOutside)
         
         XCTAssertEqual(button!.backgroundColor, normalColor,  "test_bbc_controlEventTouchUpOutside");
     }
     
     func test_bbc_controlEventTouchCancel()
     {
-        button!.sendActionsForControlEvents(.TouchCancel)
+        button!.sendActions(for: .touchCancel)
         
         XCTAssertEqual(button!.backgroundColor, normalColor,  "test_bbc_controlEventTouchCancel");
     }
@@ -117,28 +117,28 @@ class ButtonBackgroundColorTests: XCTestCase {
     
     func test_bbc_controlEventTouchDown_withoutExtension()
     {
-        buttonWithoutExtension!.sendActionsForControlEvents(.TouchDown)
+        buttonWithoutExtension!.sendActions(for: .touchDown)
         
         XCTAssertEqual(button!.backgroundColor, normalColor,  "test_bbc_controlEventTouchDown_withoutExtension");
     }
     
     func test_bbc_controlEventTouchUpInside_withoutExtension()
     {
-        buttonWithoutExtension!.sendActionsForControlEvents(.TouchUpInside)
+        buttonWithoutExtension!.sendActions(for: .touchUpInside)
         
         XCTAssertEqual(button!.backgroundColor, normalColor,  "test_bbc_controlEventTouchUpInside_withoutExtension");
     }
     
     func test_bbc_controlEventTouchUpOutside_withoutExtension()
     {
-        buttonWithoutExtension!.sendActionsForControlEvents(.TouchUpOutside)
+        buttonWithoutExtension!.sendActions(for: .touchUpOutside)
         
         XCTAssertEqual(button!.backgroundColor, normalColor,  "test_bbc_controlEventTouchUpOutside_withoutExtension");
     }
     
     func test_bbc_controlEventTouchCancel_withoutExtension()
     {
-        buttonWithoutExtension!.sendActionsForControlEvents(.TouchCancel)
+        buttonWithoutExtension!.sendActions(for: .touchCancel)
         
         XCTAssertEqual(button!.backgroundColor, normalColor,  "test_bbc_controlEventTouchCancel_withoutExtension");
     }
